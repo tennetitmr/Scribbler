@@ -11,4 +11,32 @@ body{
 } 
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
-                                 
+.header{
+    color: #186CA3;
+}
+.header-logo {
+    display: flex;
+    flex-direction: column;
+}
+.topButtons {
+    float: right;
+    background-color: blue;
+    color: aliceblue;
+    border: 0px;
+}
+#pageTitle {
+    font-family: 'Satisfy', cursive;
+    font-size: 27px;
+}
+.middleText {
+    font-family: 'Marck Script', cursive;
+    margin: 0px;
+    font-size: 10px;
+    color: #333333;
+}
+#btn-sign-up{
+    margin-left: 12px;
+}
+#signUpDiv {
+    text-align: center;
+}
