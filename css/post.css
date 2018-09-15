@@ -17,3 +17,52 @@
 }
 
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */
+
+.blogTite{
+    text-align: center;
+}
+.editButton{
+    float: right;
+    padding: 1%;
+    background-color: red;
+    color:white;
+    width: 7%;
+    margin: 0px 10px 0px 10px;
+}
+.likeButton{
+    padding: 1%;
+    background-color: red;
+    color:white;
+    width: 7%;
+    margin: 0px 10px 0px 10px;
+}
+
+.commentText{
+    width: 50%;
+    height:80px;
+    margin: 0px 10px 0px 10px;
+}
+.commPost{
+    padding: 1%;
+    background-color: red;
+    color:white;
+    width: 7%;
+    margin-top: 1%;
+    margin: 10px 10px 10px 10px;
+}
+.allCommt{
+    font-weight: bold;
+    margin: 0px 10px 0px 10px;
+}
+.showCommt{
+    background-color: grey;
+    padding:10px;
+    margin: 0px 10px 0px 10px;
+}
+.textStyle{
+    background-color: white;
+    height: 70px;
+    width:100%;
+    resize: none;
+}
+
