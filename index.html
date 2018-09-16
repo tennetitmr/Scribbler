@@ -18,25 +18,28 @@
     <script src="js\bootstrap.min.js"></script>
 </head>
 <body>
-<div id="main-container-div">
+<div class="container-fluid" id="main-container-div mt-0">
     <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-    <div class="header">
-        <button type="button" class="btn btn-primary topButtons" data-toggle="modal" data-target="#signInModel" id="btn-sign-up">
-            Sign In
-        </button>
-        <button type="button" class="btn btn-primary topButtons" data-toggle="modal" data-target="#signUpModel" id="sign-up-button">
-            Sign Up
-        </button>
-        <div class="header-logo">
-            <a id="pageTitle" class="logo-title">ScriBBler</a>
-            <label class="middleText">Explore, Imagine, Create</label>
-        </div>
+    <div class=" navbar header m-0">
+           <div class="navbar-brand  d-flex flex-column">
+               <span class="mb-0 h1" id="pageTitle">ScriBBler </span>
+               <span  id="subheading">Explore, Imagine, Create</span>
+           </div>
+           <div class=" nav-item">
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signInModel" >
+                   Sign In
+               </button>
+               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signUpModel" >
+                   Sign Up
+               </button>
+
+           </div>
     </div>
 
     <!-- Insert code for All Posts & Create Post button here -->
     <div class="postButtons">
-        <button type="button" class="btn btn-warning"id="post-btn" onclick="showAllPost()">All Posts</button>
-        <button type="button" class="btn btn-warning" data-toggle="modal" data-target=".bd-postModel-model-lg" id="create-button">
+        <button type="button" class="btn post-btn"id="post-btn" onclick="showAllPost()">All Posts</button>
+        <button type="button" class="btn post-btn" data-toggle="modal" data-target=".bd-postModel-model-lg" id="create-button">
             Create Post
         </button>
     </div>
@@ -47,7 +50,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h5 class="modal-title w-100" id="signInModelLabel">Welcome Back!</h5>
+                    <h5 class="modal-title w-100" id="signInModelLabel"><strong>Welcome Back!</strong></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -56,11 +59,11 @@
                     <form>
                         <div class="form-group">
                             <label for="exampleInputuserName">Username</label>
-                            <input type="text" class="form-control" id="exampleInputuserName"  placeholder="Enter Username" required>
+                            <input type="text" class="form-control input-group1" id="exampleInputuserName"  placeholder="Enter Username" required>
                         </div>
                         <div class="form-group">
                             <label for="signPassword">Password</label>
-                            <input type="password" class="form-control" id="signPassword" placeholder="Password" required>
+                            <input type="password" class="form-control input-group1" id="signPassword" placeholder="Password" required>
                         </div>
                         <div class="form-group">
                         <button type="button" class="form-control btn btn-success">Sign IN</button>
@@ -85,7 +88,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h5 class="modal-title w-100" id="signUpModelLabel" >Get Started</h5>
+                    <h5 class="modal-title w-100" id="signUpModelLabel" ><strong>Get Started</strong></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -94,19 +97,19 @@
                     <form>
                         <div class="form-group">
                             <label for="fullName">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name" required>
+                            <input type="text" class="form-control input-group1" id="fullName" placeholder="Enter Full Name" required>
                         </div>
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input type="text" class="form-control" id="username" placeholder="Enter Username" required>
+                            <input type="text" class="form-control input-group1" id="username" placeholder="Enter Username" required>
                         </div>
                         <div class="form-group">
                             <label for="userPassword">Password</label>
-                            <input type="password" class="form-control" id="userPassword" placeholder="Password" required>
+                            <input type="password" class="form-control input-group1" id="userPassword" placeholder="Password" required>
                         </div>
                         <div class="form-group">
                             <label for="confirmPassword">Confirm Password</label>
-                            <input type="text" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                            <input type="text" class="form-control input-group1" id="confirmPassword" placeholder="Confirm Password" required>
                         </div>
                         <div class="form-group">
                             <button type="button" class="form-control btn btn-success">Sign Up</button>
@@ -126,7 +129,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header text-center">
-                    <h5 class="modal-title w-100" id="postModelLabel" ><strong>Pen Your Post<strong></h5>
+                    <h5 class="modal-title w-100" id="postModelLabel" ><strong>Pen Your Post</strong></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -135,11 +138,11 @@
                     <form>
                         <div class="form-group">
                             <label for="title">Title:</label>
-                            <input type="text" class="form-control" id="title"  placeholder="Enter Username" required>
+                            <input type="text" class="form-control input-group1" id="title"  required>
                         </div>
                         <div class="form-group">
                             <label for="content">Content:</label>
-                            <textarea class="form-control" id="content" rows="10" required></textarea>
+                            <textarea class="form-control input-group1" id="content" rows="10" required></textarea>
                         </div>
                         <div class="form-group text-center" >
                             <button type="button" class="btn btn-success ">Create</button>

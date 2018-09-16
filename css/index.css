@@ -11,8 +11,11 @@ body{
 } 
 
 /* Set a style for the rest of the elements besides the header elements on the index.html page */
+input.input-group1, textarea.input-group1{
+    background-color: #e6e6e6;
+}
 .header{
-    color: #186CA3;
+    color: #005cbf;
 }
 .header-logo {
     display: flex;
@@ -26,13 +29,12 @@ body{
 }
 #pageTitle {
     font-family: 'Satisfy', cursive;
-    font-size: 27px;
 }
-.middleText {
+#subheading  {
     font-family: 'Marck Script', cursive;
-    margin: 0px;
-    font-size: 10px;
-    color: #333333;
+    color: #000000;
+    font-size: .67em;
+
 }
 #btn-sign-up{
     margin-left: 12px;
@@ -41,9 +43,11 @@ body{
     text-align: center;
 }
 .postButtons {
-
     text-align: center;
-
     margin-top: 15%;
+}
+.post-btn {
+    font-weight: bold;
+    background-color: #D9CB00;
 
 }
