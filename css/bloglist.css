@@ -60,5 +60,15 @@ body {
 .allPostsContainer {
     height: 100%;
     width: 100%;
+}
+.trash{
+	position: absolute;
+    top: 8px;
+    right: 16px;
+}
 
+.dotIcon {
+	position: absolute;
+    top: 108px;
+    right: 16px;
 }
